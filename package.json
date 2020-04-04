@@ -1,0 +1,20 @@
+{
+  "name": "line_tracer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "watch \"pkill http-server;npm run build && http-server ./dist -o -c0\" ./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.12.1",
+    "rollup": "^1.27.9",
+    "rollup-plugin-babel-minify": "^9.1.1",
+    "rollup-plugin-progress": "^1.1.1",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {}
+}
